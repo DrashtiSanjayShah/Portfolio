@@ -916,7 +916,7 @@ section {
   padding-left: -2rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (max-device-width: 360px) {
   header .right-header {
     padding: 0 !important;
   }
@@ -930,8 +930,20 @@ section {
     padding-bottom: 6rem;
   }
   .blogs {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
     padding-bottom: 6rem;
+  }
+  .blogs .blog img{
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 300px;
+
   }
   .main-titlee1 h2 {
     font-size: 2.5rem;
@@ -986,4 +998,50 @@ section {
   .controls .control {
     margin: 1rem 0.3rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 7rem 3rem;
+  }
+
+  .about-stats .progress-bars {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-container .right-about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .timeline {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-title h2 {
+    font-size: 3rem;
+  }
+  .main-title h2 span {
+    font-size: 3rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    /* max-width: 100%; */
+    height: 300px;
+  }
+  .blogs .blog img {
+    max-width: auto;
+    height: 300px;
+  }
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
