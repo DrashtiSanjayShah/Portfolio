@@ -30,8 +30,8 @@ I'm Drashti, a passionate web developer who crafts user-friendly websites and ti
 ## Connect with Me 🌐
 
 - [LinkedIn](https://www.linkedin.com/in/drashtisanjayshah)
-- [YouTube](https://www.youtube.com/ThatOneGirlInBTech)
-- [Instagram](https://www.instagram.com/ThatOneGirlInBTech)
+- [YouTube](https://www.youtube.com/@thatonegirlinbtech)
+- [Instagram](https://www.instagram.com/that_one_girl_in_b.tech/?igshid=MzRlODBiNWFlZA%3D%3D)
 - [GitHub](https://github.com/DrashtiSanjayShah)
 
 Feel free to explore my projects, get in touch, and let's dive into the wonderful world of tech together! 🚀
