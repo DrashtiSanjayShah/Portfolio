@@ -2,6 +2,12 @@ const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
+const form = documnet.getElementbyId('contactFor');
+
+form.addEventListener('submit',()=>{
+    e.preventdefault();
+    const 
+}
 
 function PageTransitions(){
     // Button click active class
