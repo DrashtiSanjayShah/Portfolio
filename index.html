@@ -1,547 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drashti's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js"></script>
+  </head>
 
-</head>
-
-<body class="main-content">
+  <body class="main-content">
     <header class="section sec1 header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="images/drashtis.png" />
-                </div>
-            </div>
-
-            <div class="right-header">
-                <h1 class="name">Hi, I'm <span>Drashti</span></h1>
-                <p>
-                    I'm a budding Web Developer. I love to create beautiful and
-                    functional websites with easy navigation. I also enjoy working with Pygame.
-                </p>
-                <div class="btn-con">
-                    <a href="Drashti_Shah_Resume.pdf" target="_blank" class="main-btn" download>
-                        <span class="btn-text" href="Drashti_Shah_Resume.pdf" target="_blank">Download Resume</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
-                    </a>
-                </div>
-            </div>
+      <div class="header-content">
+        <div class="left-header">
+          <div class="h-shape"></div>
+          <div class="image">
+            <img src="images/drashtis.png" />
+          </div>
         </div>
+
+        <div class="right-header">
+          <h1 class="name">Hi, I'm <span>Drashti</span></h1>
+          <p>
+            I'm a budding Web Developer. I love to create beautiful and
+            functional websites with easy navigation. I also enjoy working with
+            Pygame.
+          </p>
+          <div class="btn-con">
+            <a
+              href="Drashti_Shah_Resume.pdf"
+              target="_blank"
+              class="main-btn"
+              download
+            >
+              <span
+                class="btn-text"
+                href="Drashti_Shah_Resume.pdf"
+                target="_blank"
+                >Download Resume</span
+              >
+              <span class="btn-icon"><i class="fas fa-download"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-        <section class="section sec2 about" id="about">
-            <div class="main-title">
-                <h2>My <span> Bio</span></h2>
+      <section class="section sec2 about" id="about">
+        <div class="main-title">
+          <h2>My <span> Bio</span></h2>
+        </div>
+        <div class="about-container">
+          <div class="left-about">
+            <h4>About Me</h4>
+            <p>
+              I am inclined towards both academics and extra curricular
+              activities. I have tried to strike a balance between the two so
+              far. I intend to maintain the same for the rest of my time here!
+            </p>
+            <div class="btn-con">
+              <a
+                href="Drashti_Shah_Resume.pdf"
+                target="_blank"
+                class="main-btn"
+                download
+              >
+                <span class="btn-text">Download Resume</span>
+                <span class="btn-icon"><i class="fas fa-download"></i></span>
+              </a>
             </div>
-            <div class="about-container">
-                <div class="left-about">
-                    <h4>About Me</h4>
-                    <p>I am inclined towards both academics and extra curricular activities. I have tried to strike a
-                        balance between the two so far. I intend to maintain the same for the rest of my time here!</p>
-                    <div class="btn-con">
-                        <a href="Drashti_Shah_Resume.pdf" target="_blank" class="main-btn" download>
-                            <span class="btn-text">Download Resume</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">10+</p>
-                            <p class="small-text">
-                                Projects <br />
-                                Completed
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">50+</p>
-                            <p class="small-text">
-                                Educational Videos <br />
-                                Published
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">5+</p>
-                            <p class="small-text">
-                                Courses <br />
-                                Completed
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">3+</p>
-                            <p class="small-text">
-                                Student Clubs' <br />
-                                Member
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">Python</p>
-                        <div class="progress-con">
-                            <p class="prog text">85%</p>
-                            <div class="progress">
-                                <span class="python"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">html5</p>
-                        <div class="progress-con">
-                            <p class="prog text">80%</p>
-                            <div class="progress">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">CSS</p>
-                        <div class="progress-con">
-                            <p class="prog text">70%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">JavaScript</p>
-                        <div class="progress-con">
-                            <p class="prog text">70%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">React JS</p>
-                        <div class="progress-con">
-                            <p class="prog text">60%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h4 class="stat-title">My Timeline</h4>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">MARCH 2018</p>
-                    <h5>10<sup>th</sup><span> - 94.20%</span></h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">FEBRUARY 2020</p>
-                    <h5>12<sup>th</sup><span> - 83%</span></h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">DECEMBER 2020</p>
-                    <h5>CET<span> - 91.03</span> percentile</h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">DECEMBER 2020</p>
-                    <h5>SEM 1<span> - 10.0 SGPI</span> </h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">DECEMBER 2020</p>
-                    <h5>SEM 2<span> - 9.7 SGPI</span> </h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">DECEMBER 2020</p>
-                    <h5> AARAMBH<span> - Drama Club</span> </h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">DECEMBER 2020</p>
-                    <h5>SEM 3<span> - 9.96 SGPI</span> </h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">DEC 2021 - present</p>
-                    <h5>Help For Coders<span> - SEO</span></h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">DEC 2021 - present</p>
-                    <h5>MOKSH<span> - DANCE CREW</span></h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">DEC 2021 - present</p>
-                    <h5>SEM 4<span> - 9.48 SGPI</span></h5>
-                </div>
-
-            </div>
-        </section>
-        <section class="section sec3 portfolio" id="portfolio">
-            <div class="main-titlee">
-                <h2>my <span> Portfolio</span></h2>
-                <p class="port-text">
-                    My favourite projects!
+          </div>
+          <div class="right-about">
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">10+</p>
+                <p class="small-text">
+                  Projects <br />
+                  Completed
                 </p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">50+</p>
+                <p class="small-text">
+                  Educational Videos <br />
+                  Published
+                </p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">5+</p>
+                <p class="small-text">
+                  Courses <br />
+                  Completed
+                </p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">3+</p>
+                <p class="small-text">
+                  Student Clubs' <br />
+                  Member
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <h4 class="stat-title">My Skills</h4>
+          <div class="progress-bars">
+            <div class="progress-bar">
+              <p class="prog-title">Python</p>
+              <div class="progress-con">
+                <p class="prog text">85%</p>
+                <div class="progress">
+                  <span class="python"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">html5</p>
+              <div class="progress-con">
+                <p class="prog text">80%</p>
+                <div class="progress">
+                  <span class="html"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">CSS</p>
+              <div class="progress-con">
+                <p class="prog text">70%</p>
+                <div class="progress">
+                  <span class="css"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">JavaScript</p>
+              <div class="progress-con">
+                <p class="prog text">70%</p>
+                <div class="progress">
+                  <span class="js"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">React JS</p>
+              <div class="progress-con">
+                <p class="prog text">60%</p>
+                <div class="progress">
+                  <span class="react"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="stat-title">My Timeline</h4>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">MARCH 2018</p>
+            <h5>10<sup>th</sup><span> - 94.20%</span></h5>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">FEBRUARY 2020</p>
+            <h5>12<sup>th</sup><span> - 83%</span></h5>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">DECEMBER 2020</p>
+            <h5>CET<span> - 91.03</span> percentile</h5>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">DECEMBER 2020</p>
+            <h5>SEM 1<span> - 10.0 SGPI</span></h5>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">DECEMBER 2020</p>
+            <h5>SEM 2<span> - 9.7 SGPI</span></h5>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">DECEMBER 2020</p>
+            <h5>AARAMBH<span> - Drama Club</span></h5>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">DECEMBER 2020</p>
+            <h5>SEM 3<span> - 9.96 SGPI</span></h5>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">DEC 2021 - present</p>
+            <h5>Help For Coders<span> - SEO</span></h5>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">DEC 2021 - present</p>
+            <h5>MOKSH<span> - DANCE CREW</span></h5>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">DEC 2021 - present</p>
+            <h5>SEM 4<span> - 9.48 SGPI</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="section sec3 portfolio" id="portfolio">
+        <div class="main-titlee">
+          <h2>my <span> Portfolio</span></h2>
+          <p class="port-text">My favourite projects!</p>
+          <div class="icons">
+            <a
+              href="https://github.com/DrashtiSanjayShah/"
+              target="_blank"
+              class="icon"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="portfolios">
+            <div class="portfolio-item">
+              <div class="image">
+                <img src="images/linkedin.jpeg" alt="" />
+              </div>
+              <div class="hover-item">
+                <h3>Click below!</h3>
                 <div class="icons">
-                    <a href="https://github.com/DrashtiSanjayShah/" target="_blank" class="icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-
+                  <a
+                    href="https://linkedin-ccee8.web.app"
+                    target="_blank"
+                    class="icon"
+                  >
+                    <i class="fab fa-github"></i> </a
+                  >LinkedIn clone
                 </div>
-                <div class="portfolios">
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="images/linkedin.jpeg" alt="" />
-                        </div>
-                        <div class="hover-item">
-                            <h3>Click below!</h3>
-                            <div class="icons">
-                                <a href="https://linkedin-ccee8.web.app" target="_blank" class="icon">
-                                    <i class="fab fa-github"></i> </a>LinkedIn clone
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="images/snake.png" alt="" />
-                        </div>
-                        <div class="hover-item">
-                            <h3>Click here!</h3>
-                            <div class="icons">
-                                <a href="https://github.com/DrashtiSanjayShah/Snake-Game" target="_blank" class="icon">
-                                    <i class="fab fa-github"></i> </a>Snake game
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="images/calculator.jpg" alt="" />
-                        </div>
-                        <div class="hover-item">
-                            <h3>Project Source</h3>
-                            <div class="icons">
-                                <a href="https://github.com/DrashtiSanjayShah/React-Calculator" target="_blank"
-                                    class="icon">
-                                    <i class="fab fa-github"></i> </a>React Calculator
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="images/pongg.jpeg" alt="" />
-                        </div>
-                        <div class="hover-item">
-                            <h3>Project Source</h3>
-                            <div class="icons">
-                                <a href="https://github.com/DrashtiSanjayShah/Pong-python" target="_blank" class="icon">
-                                    <i class="fab fa-github"></i> </a>Pong
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="images">
-                            <img src="images/space.png" height='3000' alt="" />
-                        </div>
-                        <div class="hover-item">
-                            <h3>Project Source</h3>
-                            <div class="icons">
-                                <a href="https://github.com/DrashtiSanjayShah/Space-invaders.git" target="_blank"
-                                    class="icon">
-                                    <i class="fab fa-github"></i> </a>SpaceInvaders
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <section class="section sec4 video" id="video">
-            <div class="video-content">
-                <div class="main-titlee1">
-                    <h2>My <span>YouTube</span></h2>
-                    <p>Here are some of my latest and most popular uploads</p>
-                </div>
+            <div class="portfolio-item">
+              <div class="image">
+                <img src="images/snake.png" alt="" />
+              </div>
+              <div class="hover-item">
+                <h3>Click here!</h3>
                 <div class="icons">
-                    <a href="https://www.youtube.com/@thatonegirlinbtech" target="_blank" class="icon">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
+                  <a
+                    href="https://github.com/DrashtiSanjayShah/Snake-Game"
+                    target="_blank"
+                    class="icon"
+                  >
+                    <i class="fab fa-github"></i> </a
+                  >Snake game
                 </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <a href="" target="_blank">
-                            <img src="images/pong.png" width="40" height="300" />
-                            <div class="blog-text">
-                                <h4>Pong game using Pygame library of Python</h4>
-                        </a>
-                        <!-- <p>In this video I have shown how to make PONG game using Python.</p> -->
-                    </div>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="image">
+                <img src="images/calculator.jpg" alt="" />
+              </div>
+              <div class="hover-item">
+                <h3>Project Source</h3>
+                <div class="icons">
+                  <a
+                    href="https://github.com/DrashtiSanjayShah/React-Calculator"
+                    target="_blank"
+                    class="icon"
+                  >
+                    <i class="fab fa-github"></i> </a
+                  >React Calculator
                 </div>
-                <div class="blog">
-                    <a href="" target="_blank">
-                        <img src="images/osi vs tcp thm.pdf" width="4000" height="300" />
-                        <div class="blog-text">
-                            <h4>Difference between OSI and TCP/IP models</h4>
-                    </a>
-                    <!-- <p>usska description</p> -->
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="image">
+                <img src="images/pongg.jpeg" alt="" />
+              </div>
+              <div class="hover-item">
+                <h3>Project Source</h3>
+                <div class="icons">
+                  <a
+                    href="https://github.com/DrashtiSanjayShah/Pong-python"
+                    target="_blank"
+                    class="icon"
+                  >
+                    <i class="fab fa-github"></i> </a
+                  >Pong
                 </div>
+              </div>
             </div>
-            <div class="blog">
-                <a href="" target="_blank">
-                    <img src="images/cal.png" />
-                    <div class="blog-text">
-                        <h4>iOS Calculator using ReactJS</h4>
-                </a>
-                <!-- <p>description</p> -->
-            </div>
-            </div>
-            <div class="blog">
-                <a href="" target="_blank">
-                    <img src="images/exams thm.png" />
-                    <div class="blog-text">
-                        <h4>How was my SEM5?</h4>
-                </a>
-                <!-- <p>description</p> -->
-            </div>
-            </div>
-
-
-            <div class="blog">
-                <a href="https://youtu.be/CN-nJOgFXVQ" target="_blank">
-                    <img src="images/kmaps.png" />
-                    <div class="blog-text">
-                        <h4>K-Maps </h4>
-                </a>
-                <!-- <p>description</p> -->
-            </div>
-            </div>
-            <div class="blog">
-                <a href="" target="_blank">
-                    <img src="images/components thm.png" />
-                    <div class="blog-text">
-                        <h4>All about 'React Components'</h4>
-                </a>
-                <!-- <p>description</p> -->
-            </div>
-            </div>
-            <div class="blog">
-                <a href="https://youtu.be/FwLHQm9KUwk" target="_blank">
-                    <img src="images/diagonalizable.png" />
-                    <div class="blog-text">
-                        <h4>Matrix is diagonalizable or not</h4>
-                </a>
-                <!-- <p>usska description</p> -->
-            </div>
-            </div>
-            <div class="blog">
-                <a href="" target="_blank">
-                    <img src="images/OSI.pdf" />
-                    <div class="blog-text">
-                        <h4>OSI Model in Computer Networking</h4>
-                </a>
-                <!-- <p>usska description</p> -->
-            </div>
-            </div>
-            </div>
-            </div>
-        </section>
-        <section class="section sec5 contact" id="contact">
-            <div class="contact-container">
-                <div class="main-titlee1">
-                    <h2>My<span> Contact Details</span></h2>
+            <div class="portfolio-item">
+              <div class="images">
+                <img src="images/space.png" height="3000" alt="" />
+              </div>
+              <div class="hover-item">
+                <h3>Project Source</h3>
+                <div class="icons">
+                  <a
+                    href="https://github.com/DrashtiSanjayShah/Space-invaders.git"
+                    target="_blank"
+                    class="icon"
+                  >
+                    <i class="fab fa-github"></i> </a
+                  >SpaceInvaders
                 </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>I am Reachable at</h4>
-
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <p>:Mumbai,Maharashtra</p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <p><span class="one">: drashtisanjayshah@gmail.com</span></p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                </div>
-                                <p><span>: SIESGST, Navi Mumbai</span></p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fa-solid fa-globe"></i>
-                                </div>
-                                <p><span>: English, Hindi, Gujarati</span></p>
-                            </div>
-                        </div>
-                        <div class="contact-icons">
-                            <div class="contact-icon">
-                                <a href="https://www.youtube.com/@thatonegirlinbtech" target="_blank">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                                <a href="https://github.com/DrashtiSanjayShah/" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/drashtisanjayshah" target="_blank">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                                <a href="https://learn.microsoft.com/en-gb/users/drashtisanjayshah-7172/"
-                                    target="_blank">
-                                    <i class="fa-brands fa-microsoft"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-contact">
-                        <form action="" class="contact-form" id="contactForm">
-                            <div class="input-control i-c-2">
-                                <input type="text" id='name' required placeholder="YOUR NAME" />
-                                <input type="text" id='mail' required placeholder="YOUR EMAIL" />
-                            </div>
-                            <div class="input-control">
-                                <input type="text" id='subject' required placeholder="ENTER SUBJECT" />
-                            </div>
-                            <div class="input-control">
-                                <textarea name="text" id="message" cols="25" rows="8"
-                                    placeholder="WRITE YOUR MESSAGE HERE"></textarea>
-
-                            </div>
-                            <div class="submit-btn">
-                                <a href="Drashti_Shah_Resume.pdf" target="_blank" download class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div>
-                            <div class="submit-btn">
-                                <button type="submit" class="main-btn">
-                                    <span class="btn-text">Send</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </button>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="section sec4 video" id="video">
+        <div class="video-content">
+          <div class="main-titlee1">
+            <h2>My <span>YouTube</span></h2>
+            <p>Here are some of my latest and most popular uploads</p>
+          </div>
+          <div class="icons">
+            <a
+              href="https://www.youtube.com/@thatonegirlinbtech"
+              target="_blank"
+              class="icon"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+          <div class="blogs">
+            <div class="blog">
+              <a href="" target="_blank">
+                <img src="images/pong.png" width="40" height="300" />
+                <div class="blog-text">
+                  <h4>Pong game using Pygame library of Python</h4>
+                </div>
+              </a>
+              <!-- <p>In this video I have shown how to make PONG game using Python.</p> -->
+            </div>
+          </div>
+          <div class="blog">
+            <a href="" target="_blank">
+              <img src="images/osi vs tcp thm.pdf" width="4000" height="300" />
+              <div class="blog-text">
+                <h4>Difference between OSI and TCP/IP models</h4>
+              </div>
+            </a>
+            <!-- <p>usska description</p> -->
+          </div>
+        </div>
+        <div class="blog">
+          <a href="" target="_blank">
+            <img src="images/cal.png" />
+            <div class="blog-text">
+              <h4>iOS Calculator using ReactJS</h4>
+            </div>
+          </a>
+          <!-- <p>description</p> -->
+        </div>
+
+        <div class="blog">
+          <a href="" target="_blank">
+            <img src="images/exams thm.png" />
+            <div class="blog-text">
+              <h4>How was my SEM5?</h4>
+            </div>
+          </a>
+          <!-- <p>description</p> -->
+        </div>
+
+        <div class="blog">
+          <a href="https://youtu.be/CN-nJOgFXVQ" target="_blank">
+            <img src="images/kmaps.png" />
+            <div class="blog-text">
+              <h4>K-Maps</h4>
+            </div>
+          </a>
+          <!-- <p>description</p> -->
+        </div>
+
+        <div class="blog">
+          <a href="" target="_blank">
+            <img src="images/components thm.png" />
+            <div class="blog-text">
+              <h4>All about 'React Components'</h4>
+            </div>
+          </a>
+          <!-- <p>description</p> -->
+        </div>
+        <div class="blog">
+          <a href="https://youtu.be/FwLHQm9KUwk" target="_blank">
+            <img src="images/diagonalizable.png" />
+            <div class="blog-text">
+              <h4>Matrix is diagonalizable or not</h4>
+            </div>
+          </a>
+          <!-- <p>usska description</p> -->
+        </div>
+        <div class="blog">
+          <a href="" target="_blank">
+            <img src="images/OSI.pdf" />
+            <div class="blog-text">
+              <h4>OSI Model in Computer Networking</h4>
+            </div>
+          </a>
+          <!-- <p>usska description</p> -->
+        </div>
+      </section>
+      <section class="section sec5 contact" id="contact">
+        <div class="contact-container">
+          <div class="main-titlee1">
+            <h2>My<span> Contact Details</span></h2>
+          </div>
+          <div class="contact-content-con">
+            <div class="left-contact">
+              <h4>I am Reachable at</h4>
+
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p>:Mumbai,Maharashtra</p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <p><span class="one">: drashtisanjayshah@gmail.com</span></p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-user-graduate"></i>
+                  </div>
+                  <p><span>: SIESGST, Navi Mumbai</span></p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fa-solid fa-globe"></i>
+                  </div>
+                  <p><span>: English, Hindi, Gujarati</span></p>
+                </div>
+              </div>
+              <div class="contact-icons">
+                <div class="contact-icon">
+                  <a
+                    href="https://www.youtube.com/@thatonegirlinbtech"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <a
+                    href="https://github.com/DrashtiSanjayShah/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/drashtisanjayshah"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://learn.microsoft.com/en-gb/users/drashtisanjayshah-7172/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-microsoft"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="right-contact">
+              <form action="" class="contact-form" id="contactForm">
+                <div class="input-control i-c-2">
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    placeholder="YOUR NAME"
+                  />
+                  <input
+                    type="text"
+                    id="mail"
+                    required
+                    placeholder="YOUR EMAIL"
+                  />
+                </div>
+                <div class="input-control">
+                  <input
+                    type="text"
+                    id="subject"
+                    required
+                    placeholder="ENTER SUBJECT"
+                  />
+                </div>
+                <div class="input-control">
+                  <textarea
+                    name="text"
+                    id="message"
+                    cols="25"
+                    rows="8"
+                    placeholder="WRITE YOUR MESSAGE HERE"
+                  ></textarea>
+                </div>
+                <div class="submit-btn">
+                  <a
+                    href="Drashti_Shah_Resume.pdf"
+                    target="_blank"
+                    download
+                    class="main-btn"
+                  >
+                    <span class="btn-text">Download CV</span>
+                    <span class="btn-icon"
+                      ><i class="fas fa-download"></i
+                    ></span>
+                  </a>
+                </div>
+                <div class="submit-btn">
+                  <button type="submit" class="main-btn">
+                    <span class="btn-text">Send</span>
+                    <span class="btn-icon"
+                      ><i class="fas fa-download"></i
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div class="controls">
-        <div class="control control-1 active-btn" data-id="home">
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control control-2" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control control-3" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="control control-4" data-id="video">
-            <i class="fa-brands fa-youtube"></i>
-        </div>
-        <div class="control control-5" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
+      <div class="control control-1 active-btn" data-id="home">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="control control-2" data-id="about">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="control control-3" data-id="portfolio">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <div class="control control-4" data-id="video">
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="control control-5" data-id="contact">
+        <i class="fas fa-envelope-open"></i>
+      </div>
     </div>
     <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
+      <i class="fas fa-adjust"></i>
     </div>
 
     <script src="app.js"></script>
     <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
-        import {
-            getDatabase,
-            ref,
-            set,
-        } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        set,
+      } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js";
 
-        const firebaseConfig = {
-            apiKey: "AIzaSyC9Q3SCkjpJK0f4V9trBQSUtWtuUuEphjE",
-            authDomain: "portfolio-c4508.firebaseapp.com",
-            databaseURL: "https://portfolio-c4508-default-rtdb.firebaseio.com",
-            projectId: "portfolio-c4508",
-            storageBucket: "portfolio-c4508.appspot.com",
-            messagingSenderId: "583266878888",
-            appId: "1:583266878888:web:1a806dfd5f4bd0f9a9499d",
-            measurementId: "G-KEDKXH56Z3"
-        };
+      const firebaseConfig = {
+        apiKey: "AIzaSyC9Q3SCkjpJK0f4V9trBQSUtWtuUuEphjE",
+        authDomain: "portfolio-c4508.firebaseapp.com",
+        databaseURL: "https://portfolio-c4508-default-rtdb.firebaseio.com",
+        projectId: "portfolio-c4508",
+        storageBucket: "portfolio-c4508.appspot.com",
+        messagingSenderId: "583266878888",
+        appId: "1:583266878888:web:1a806dfd5f4bd0f9a9499d",
+        measurementId: "G-KEDKXH56Z3",
+      };
 
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const db = getDatabase(app);
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app);
 
-        document.getElementById("contactForm").addEventListener("submit", function (e) {
-            set(ref(db, "name/ " + document.getElementById("name").value), {
-                name: document.getElementById("name").value,
-                email: document.getElementById("mail").value, // Corrected typo here
-                subject: document.getElementById("subject").value,
-                message: document.getElementById("message").value,
-            });
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          set(ref(db, "name/ " + document.getElementById("name").value), {
+            name: document.getElementById("name").value,
+            email: document.getElementById("mail").value, // Corrected typo here
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+          });
 
-            alert("Your message has been sent successfully");
-            e.preventDefault();
-            document.getElementById("contactForm").reset();
+          alert("Your message has been sent successfully");
+          e.preventDefault();
+          document.getElementById("contactForm").reset();
         });
     </script>
-
-</body>
-
+  </body>
 </html>
