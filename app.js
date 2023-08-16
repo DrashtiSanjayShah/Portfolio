@@ -4,6 +4,23 @@ const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 const form = documnet.getElementbyId('contactFor');
 
+const firebaseConfig = {
+  apiKey: "AIzaSyC9Q3SCkjpJK0f4V9trBQSUtWtuUuEphjE",
+  authDomain: "portfolio-c4508.firebaseapp.com",
+  databaseURL: "https://portfolio-c4508-default-rtdb.firebaseio.com",
+  projectId: "portfolio-c4508",
+  storageBucket: "portfolio-c4508.appspot.com",
+  messagingSenderId: "583266878888",
+  appId: "1:583266878888:web:1a806dfd5f4bd0f9a9499d",
+  measurementId: "G-KEDKXH56Z3"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+const database = firebase.database()
+const ref = database.ref("message")
+
 // Form starts here
 <form action="" class="contact-form" id="contactForm">
                 <div class="input-control i-c-2">
@@ -39,10 +56,17 @@ const form = documnet.getElementbyId('contactFor');
 form.addEventListener('submit',()=>{
     e.preventdefault();
     const name = document.getElementById('name').value;
-    const email = document.getElementById('mail').value;
+    const mail = document.getElementById('mail').value;
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
 
+    ref.push({
+      name:name,
+      mail:mail,
+      subject:subject,
+      message:message
+    })
+  
     form.reset()
 })
 
