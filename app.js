@@ -53,8 +53,8 @@ const ref = database.ref("message")
 
 // // form ends here
 
-form.addEventListener('submit',()=>{
-    e.preventdefault();
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
     const name = document.getElementById('name').value;
     const mail = document.getElementById('mail').value;
     const subject = document.getElementById('subject').value;
