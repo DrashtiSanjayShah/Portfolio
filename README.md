@@ -2,6 +2,10 @@
 
 Welcome to my portfolio repository! Here, I'm thrilled to showcase my projects, skills, and my journey as a web developer and content creator.
 
+## I have used Firebase to deploy my project!
+You can follow this video to learn how I have done that
+<img src="https://github.com/DrashtiSanjayShah/Portfolio/assets/94853646/df6bb84b-4c1b-415b-9e31-09d9ee9265fd" href="https://youtu.be/HnnXWMh2IlY?si=S0EAUidXXK6Ffvd2">
+
 ## Table of Contents
 
 - [About Me](#about-me)
